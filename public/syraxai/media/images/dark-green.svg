@@ -1,0 +1,5 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark text with green circle logo for light mode -->
+  <text x="10" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E293B">SYRAX</text>
+  <circle cx="90" cy="20" r="10" fill="#10B981" />
+</svg>

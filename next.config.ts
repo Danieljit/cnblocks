@@ -7,7 +7,19 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'res.cloudinary.com',
             },
+            {
+                protocol: 'https',
+                hostname: 'html.tailus.io',
+            },
         ],
+    },
+    rewrites: async () => {
+        return [
+            {
+                source: '/syraxai',
+                destination: '/SyraxAI/page',
+            },
+        ];
     },
 }
 

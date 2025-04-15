@@ -6,6 +6,7 @@
 
 @theme {
 
+  --font-sans: 'Geist Sans', system-ui, sans-serif;
   --font-mono: 'Geist Mono', 'Fira Code', monospace;
 
   --color-background: hsl(var(--background));
