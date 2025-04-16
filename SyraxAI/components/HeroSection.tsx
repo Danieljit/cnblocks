@@ -36,39 +36,40 @@ export default function HeroSection() {
             <AnimatedGroup variants={transitionVariants}>
               <Link
                 href="#sonic"
-                className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
-                <span className="text-foreground text-sm">Live on Sonic 🚀</span>
-                <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+                className="hover:bg-[hsl(162,84%,48%)]/90 bg-[hsl(162,84%,48%)]/80 group mx-auto flex w-fit items-center gap-4 rounded-full border border-[hsl(162,84%,48%)]/20 p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300">
+                <span className="text-zinc-900 text-sm font-medium">Live on Sonic 🚀</span>
+                <span className="block h-4 w-0.5 border-l bg-zinc-900/30"></span>
 
-                <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
+                <div className="bg-zinc-900/10 group-hover:bg-zinc-900/20 size-6 overflow-hidden rounded-full duration-500">
                   <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
                     <span className="flex size-6">
-                      <ArrowRight className="m-auto size-3" />
+                      <ArrowRight className="m-auto size-3 text-zinc-900" />
                     </span>
                     <span className="flex size-6">
-                      <ArrowRight className="m-auto size-3" />
+                      <ArrowRight className="m-auto size-3 text-zinc-900" />
                     </span>
                   </div>
                 </div>
               </Link>
             </AnimatedGroup>
 
-            <TextEffect
-              preset="fade-in-blur"
-              speedSegment={0.3}
-              as="h1"
-              className="mt-8 text-balance text-6xl font-bold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-              SYRAX
-            </TextEffect>
-            <TextEffect
-              per="line"
-              preset="fade-in-blur"
-              speedSegment={0.3}
-              delay={0.5}
-              as="h2"
-              className="mx-auto mt-8 max-w-2xl text-balance text-2xl font-semibold">
-              Trade everything on-chain with a CEX-like experience
-            </TextEffect>
+            <h1 className="mt-8 text-balance text-6xl font-bold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+              <TextEffect
+                preset="fade-in-blur"
+                speedSegment={0.3}
+                className="text-zinc-900 dark:text-[hsl(162,84%,48%)] font-black">
+                SyraxAI
+              </TextEffect>
+            </h1>
+            <h2 className="mx-auto mt-8 max-w-2xl text-balance text-2xl font-semibold">
+              <TextEffect
+                per="line"
+                preset="fade-in-blur"
+                speedSegment={0.3}
+                delay={0.5}>
+                Trade everything on-chain with a CEX-like experience
+              </TextEffect>
+            </h2>
             <TextEffect
               per="line"
               preset="fade-in-blur"
@@ -94,20 +95,20 @@ export default function HeroSection() {
               className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
               <div
                 key={1}
-                className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5">
+                className="bg-[hsl(162,84%,48%)]/10 rounded-[calc(var(--radius-xl)+0.125rem)] border border-[hsl(162,84%,48%)]/20 p-0.5 shadow-sm">
                 <Button
                   asChild
                   size="lg"
-                  className="rounded-xl px-5 text-base font-bold">
+                  className="rounded-xl px-5 text-base font-bold bg-[hsl(162,84%,48%)] hover:bg-[hsl(162,84%,48%)]/90 text-zinc-900">
                   <Link href="#trade">
-                    <span className="text-nowrap">START TRADING</span>
+                    <span className="text-nowrap">Start Trading</span>
                   </Link>
                 </Button>
               </div>
               <div
                 key={2}
-                className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
-                <span className="text-foreground text-sm">Solana launching soon</span>
+                className="hover:bg-[hsl(162,84%,48%)]/90 bg-[hsl(162,84%,48%)]/80 dark:bg-[hsl(162,84%,48%)]/70 group mx-auto flex w-fit items-center gap-4 rounded-full border border-[hsl(162,84%,48%)]/20 dark:border-[hsl(162,84%,48%)]/30 p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300">
+                <span className="text-zinc-900 dark:text-zinc-900 text-sm font-medium">Solana <span className="font-bold">launching soon</span></span>
               </div>
             </AnimatedGroup>
           </div>

@@ -27,13 +27,9 @@ export default function TradingExperience() {
     <section className="bg-muted py-24">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
-          <TextEffect
-            preset="fade-in-blur"
-            speedSegment={0.3}
-            as="h2"
-            className="text-balance text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            The Complete Trading Experience
-          </TextEffect>
+          <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <span className="text-[hsl(162,84%,48%)]">Complete</span> Trading Experience
+          </h2>
         </div>
         
         <AnimatedGroup
@@ -51,38 +47,38 @@ export default function TradingExperience() {
           className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2">
           
           {/* Feature 1 */}
-          <div className="group relative overflow-hidden rounded-xl border bg-card p-6 shadow-sm transition-all hover:shadow-md">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <LayoutGrid className="h-6 w-6 text-primary" />
+          <div className="group relative overflow-hidden rounded-xl border border-[hsl(162,84%,48%)]/10 bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-[hsl(162,84%,48%)]/20">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[hsl(162,84%,48%)]/10">
+              <LayoutGrid className="h-6 w-6 text-[hsl(162,84%,48%)]" />
             </div>
             <h3 className="mb-2 text-xl font-bold">All-In-One Interface</h3>
             <p className="text-muted-foreground">Access every DEX on the chain through a single platform</p>
           </div>
           
           {/* Feature 2 */}
-          <div className="group relative overflow-hidden rounded-xl border bg-card p-6 shadow-sm transition-all hover:shadow-md">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <Layers className="h-6 w-6 text-primary" />
+          <div className="group relative overflow-hidden rounded-xl border border-[hsl(162,84%,48%)]/10 bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-[hsl(162,84%,48%)]/20">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[hsl(162,84%,48%)]/10">
+              <Layers className="h-6 w-6 text-[hsl(162,84%,48%)]" />
             </div>
-            <h3 className="mb-2 text-xl font-bold">Advanced Trading Tools</h3>
+            <h3 className="mb-2 text-xl font-bold">Advanced Trading <span className="text-[hsl(162,84%,48%)]">Tools</span></h3>
             <p className="text-muted-foreground">Coming soon - limit orders, DCA, and more</p>
           </div>
           
           {/* Feature 3 */}
-          <div className="group relative overflow-hidden rounded-xl border bg-card p-6 shadow-sm transition-all hover:shadow-md">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <LineChart className="h-6 w-6 text-primary" />
+          <div className="group relative overflow-hidden rounded-xl border border-[hsl(162,84%,48%)]/10 bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-[hsl(162,84%,48%)]/20">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[hsl(162,84%,48%)]/10">
+              <LineChart className="h-6 w-6 text-[hsl(162,84%,48%)]" />
             </div>
-            <h3 className="mb-2 text-xl font-bold">Real-Time Data</h3>
+            <h3 className="mb-2 text-xl font-bold">Real-Time <span className="text-[hsl(162,84%,48%)]">Data</span></h3>
             <p className="text-muted-foreground">Make informed decisions with up-to-date market information</p>
           </div>
           
           {/* Feature 4 */}
-          <div className="group relative overflow-hidden rounded-xl border bg-card p-6 shadow-sm transition-all hover:shadow-md">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <Shield className="h-6 w-6 text-primary" />
+          <div className="group relative overflow-hidden rounded-xl border border-[hsl(162,84%,48%)]/10 bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-[hsl(162,84%,48%)]/20">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[hsl(162,84%,48%)]/10">
+              <Shield className="h-6 w-6 text-[hsl(162,84%,48%)]" />
             </div>
-            <h3 className="mb-2 text-xl font-bold">Non-Custodial Security</h3>
+            <h3 className="mb-2 text-xl font-bold">Non-Custodial <span className="text-[hsl(162,84%,48%)]">Security</span></h3>
             <p className="text-muted-foreground">Maintain full control of your assets at all times</p>
           </div>
         </AnimatedGroup>

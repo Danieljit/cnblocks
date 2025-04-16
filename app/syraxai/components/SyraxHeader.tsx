@@ -11,8 +11,8 @@ export function SyraxHeader() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <header className="border-b dark:[--color-border:color-mix(in_oklab,var(--color-zinc-800)_60%,transparent)]">
-      <div className="mx-auto flex max-w-7xl justify-between px-6 py-4 lg:px-4">
+    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-auto">
+      <div className="flex items-center justify-center rounded-full bg-white/80 dark:bg-zinc-800/80 backdrop-blur-md border border-zinc-200 dark:border-zinc-700 px-6 py-3 shadow-lg">
         <div className="flex gap-6 items-center">
           <Link
             href="/syraxai"
@@ -22,72 +22,73 @@ export function SyraxHeader() {
           </Link>
 
           <Menu setActive={setActive} className="ml-4">
-            <MenuItem setActive={setActive} active={active} item="Features">
+            <MenuItem setActive={setActive} active={active} item="Referrals">
               <div className="flex flex-col space-y-4 text-sm min-w-[200px]">
-                <HoveredLink href="#trading">Trading Interface</HoveredLink>
-                <HoveredLink href="#analytics">Advanced Analytics</HoveredLink>
-                <HoveredLink href="#security">Security Features</HoveredLink>
-                <HoveredLink href="#mobile">Mobile Access</HoveredLink>
+                <HoveredLink href="#referral-program" className="text-emerald-600 dark:text-emerald-400 font-medium">Referral Program</HoveredLink>
+                <HoveredLink href="#rewards">Rewards</HoveredLink>
+                <HoveredLink href="#leaderboard">Leaderboard</HoveredLink>
               </div>
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="Products">
+            <MenuItem setActive={setActive} active={active} item="Incentives">
               <div className="text-sm grid grid-cols-2 gap-10 p-4">
                 <ProductItem
-                  title="Trading Platform"
-                  href="#trading-platform"
+                  title="Trading Rewards"
+                  href="#trading-rewards"
                   src="/syraxai/media/images/token-page-with-window.png"
-                  description="Advanced trading with real-time market data and analytics."
+                  description="Earn rewards for active trading on our platform."
                 />
                 <ProductItem
-                  title="Mobile App"
-                  href="#mobile-app"
+                  title="Staking Benefits"
+                  href="#staking-benefits"
                   src="/syraxai/media/images/portfolio-wallets.png"
-                  description="Trade on the go with our secure and intuitive mobile application."
+                  description="Stake your tokens to earn passive income and platform benefits."
                 />
                 <ProductItem
-                  title="AI Assistant"
-                  href="#ai-assistant"
+                  title="Loyalty Program"
+                  href="#loyalty-program"
                   src="/syraxai/media/images/ai-chat-empty.png"
-                  description="Get trading insights and market analysis from our AI assistant."
+                  description="Exclusive benefits for our most loyal users."
                 />
                 <ProductItem
-                  title="Token Explorer"
-                  href="#token-explorer"
+                  title="Airdrops"
+                  href="#airdrops"
                   src="/syraxai/media/images/token-page-with-window.png"
-                  description="Discover and analyze tokens with our comprehensive explorer."
+                  description="Participate in regular token airdrops and special events."
                 />
               </div>
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="Token">
+            <MenuItem setActive={setActive} active={active} item="Tokenomics">
               <div className="flex flex-col space-y-4 text-sm min-w-[200px]">
-                <HoveredLink href="#tokenomics">Tokenomics</HoveredLink>
-                <HoveredLink href="#staking">Staking Rewards</HoveredLink>
+                <HoveredLink href="#token-distribution">Distribution</HoveredLink>
+                <HoveredLink href="#utility" className="text-emerald-600 dark:text-emerald-400 font-medium">Utility</HoveredLink>
                 <HoveredLink href="#governance">Governance</HoveredLink>
-                <HoveredLink href="#utility">Token Utility</HoveredLink>
-              </div>
-            </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="FAQ">
-              <div className="flex flex-col space-y-4 text-sm min-w-[200px]">
-                <HoveredLink href="#general">General Questions</HoveredLink>
-                <HoveredLink href="#trading-faq">Trading</HoveredLink>
-                <HoveredLink href="#security-faq">Security</HoveredLink>
-                <HoveredLink href="#token-faq">Token</HoveredLink>
+                <HoveredLink href="#staking">Staking</HoveredLink>
               </div>
             </MenuItem>
           </Menu>
         </div>
-        <div className="-mr-2 flex items-center">
+        <div className="ml-6 flex items-center gap-3">
+          <ThemeToggle />
+          <Button
+            asChild
+            variant="outline"
+            size="sm"
+            className="border-[hsl(162,84%,48%)] text-[hsl(162,84%,48%)] hover:bg-[hsl(162,84%,48%)/10] dark:border-[hsl(162,84%,48%)] dark:text-[hsl(162,84%,48%)] dark:hover:bg-[hsl(162,84%,48%)/20]"
+          >
+            <Link href="#api" className="text-sm font-medium">
+              API
+            </Link>
+          </Button>
           <Button
             asChild
             variant="default"
             size="sm"
-            className="mr-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
+            className="bg-[hsl(162,84%,48%)] hover:bg-[hsl(162,84%,48%)/90] text-white"
           >
-            <Link href="#trade" className="text-sm">
+            <Link href="#trade" className="text-sm font-medium">
               Start Trading
             </Link>
           </Button>
-          <ThemeToggle />
         </div>
       </div>
     </header>
