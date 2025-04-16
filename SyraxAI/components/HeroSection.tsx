@@ -58,7 +58,7 @@ export default function HeroSection() {
                 preset="fade-in-blur"
                 speedSegment={0.3}
                 className="text-zinc-900 dark:text-[hsl(162,84%,48%)] font-black">
-                SyraxAI
+                SyraxAI 
               </TextEffect>
             </h1>
             <h2 className="mx-auto mt-8 max-w-2xl text-balance text-2xl font-semibold">
